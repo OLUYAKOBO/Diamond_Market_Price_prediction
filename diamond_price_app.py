@@ -33,7 +33,7 @@ def user_input():
     return feat1
 
 df = user_input()
-st.write(df)
+#st.write(df)
 
 num_features = df.select_dtypes(exclude = 'object').columns
 cat_features = df.select_dtypes(include = 'object').columns
@@ -60,7 +60,7 @@ def prepare(df):
     return df1
 df1 = prepare(df)
 
-st.write(df1)                                                                      
+#st.write(df1)                                                                      
 model = pickle.load(open('cat_diamond.pkl','rb'))
 predictions = model.predict(df1)
 
@@ -75,5 +75,5 @@ import time
 if st.button('*Click here to get the price of the **Diamond***'):
     time.sleep(10)
     with st.spinner('Predicting... Please wait...'):
-        st.success(f'Your Diamond value is {predictions.item()}')
+        st.success(f'Your Diamond is valued at {predictions.item()}')
         
