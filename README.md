@@ -13,6 +13,7 @@ This project aims to provide valuable insights for jewelers, appraisers, and con
 * **Modeling**: Experimented with various machine learning models, including Linear Regression, Random Forest, catboost regressor and Gradient Boosting, to predict diamond prices accurately.
 * **Model Evaluation**: Evaluated model performance using metrics like Mean Absolute Error (MAE) and R-squared to ensure reliable predictions.
 * **Insights**: Provided insights into the most influential factors affecting diamond prices, helping stakeholders understand the value determinants.
+* **Model Deployment**: The model was deployed into a web application for usage.
 
 **Dataset**
 
